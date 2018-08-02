@@ -1,31 +1,31 @@
 
-function main() {
-
-
-var enterNumber = alert(prompt("What is your final number?: "));
-
-for(numberCount=0;numberCount<enterNumber;numberCount++)
+function main()
 {
-    if (numberCount%3===0 && numberCount%5===0)
+
+    var enterNumber = prompt("What is your final number?: ");
+
+    for(numberCount=0;numberCount<enterNumber;numberCount++)
     {
-        console.log((numberCount) + "\n");
-        console.log("FIZZBUZZ", numberCount)
+        if (numberCount%3===0 && numberCount%5===0)
+        {
+            console.log((numberCount) + "\n");
+            console.log("FIZZBUZZ", numberCount);
+        }
+        else if (numberCount%3===0)
+        {
+            console.log((numberCount) + "\n");
+            console.log("FIZZ", numberCount);
+        }
+        else if (numberCount%5===0)
+        {
+            console.log((numberCount) + "\n");
+            console.log("BUZZ", numberCount);
+        }
+        else
+        {
+            console.log(numberCount);
+        }
     }
-    else if (numberCount%3===0)
-    {
-        console.log((numberCount) + "\n");
-        console.log("FIZZ", numberCount)
-    }
-    else if (numberCount%5==0)
-    {
-        console.log((numberCount) + "\n")
-        console.log("BUZZ", numberCount)
-    }
-    else
-    {
-        console.log(numberCount)
-    }
-}
 }
 
 main();
